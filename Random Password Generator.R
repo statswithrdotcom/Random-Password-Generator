@@ -57,8 +57,7 @@ ui <- fluidPage(theme = shinytheme("cosmo"),
                              mainPanel(
                                h1("The Generated Password(s)"),
                                h6("The password generator depends on the seed, the submit button 
-                                  that generates a new password after every click, and the system time,
-                                  ensuring every user should get unique results."),
+                                  that generates a new password after every click, and the system time."),
                                verbatimTextOutput("Password"),
                                uiOutput("clip1"),
                                h4("Made by statswithr.com")
