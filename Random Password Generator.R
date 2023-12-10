@@ -14,7 +14,7 @@ Pass_Generator <- function(Minimum = 15, Maximum = 20, Seed, Action){
                         "*","(",")","_","=",","))
   
   # Set the initial seed and increments each time the action button is clicked
-  Seed_Factors = (as.numeric(Seed) %% 10^9) + Action + round(100*proc.time()[3],0)
+  Seed_Factors = (as.numeric(Seed) %% 10^9) + Action + round(10*proc.time()[3],0)
   set.seed(Seed_Factors %% 10^9) # The %% ensures the number can not be over 10^9
     
   # Randomly determines how long the password will
